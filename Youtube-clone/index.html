@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Clone</title>
+    <link href="styles/index.css" rel="stylesheet" type="text/css" />
+    <link href="styles/nav.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <nav>
+      <div class="left">
+        <div class="icon">
+          <img src="./Assets/hamburger.png" />
+        </div>
+
+        <div class="logo">
+          <img src="Assets/logo.png" />
+        </div>
+      </div>
+
+      <div class="middle">
+        <div class="input">
+          <input type="search" placeholder="Search" />
+          <button type="button">
+            <img src="./Assets/SearchBox-Button.png" />
+          </button>
+        </div>
+        <div class="icon">
+          <img src="./Assets/micIcon.png" />
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="icon">
+          <img src="./Assets/Create.png">
+        </div>
+        <div class="icon">
+          <img src="./Assets/apps.png">
+        </div>
+        <div class="icon">
+          <img src="./Assets/Notifications.png">
+        </div>
+        <div class="icon">
+          <img src="./Assets/Profile.png">
+        </div>
+      </div>
+    </nav>
+
+    <aside class="side-bar">
+      <a href="#" class="links active"><img src="./Assets/Icon.png" alt="">home</a>
+        <a href="#" class="links"><img src="./Assets/explore.png" alt="">explore</a>
+        <a href="#" class="links"><img src="./Assets/subscriptions.png" alt="">subscription</a>
+        <hr class="seperator">
+        <a href="#" class="links"><img src="./Assets/library.png" alt="">library</a>
+        <a href="#" class="links"><img src="./Assets/history.png" alt="">history</a>
+        <a href="#" class="links"><img src="./Assets/yourVideos.png" alt="">Your videos</a>
+        <a href="#" class="links"><img src="./Assets/watchLater.png" alt="">watch Later</a>
+        <a href="#" class="links"><img src="./Assets/liked.png" alt="">Liked video</a>
+        <a href="#" class="links"><img src="./Assets/arrowBottom.png" alt="">show more</a>
+    </aside>
+
+
+    <div class="filters">
+      <button class="filter-options active">all</button>
+      <button class="filter-options">CSS</button>
+      <button class="filter-options">web development</button>
+      <button class="filter-options">python</button>
+      <button class="filter-options">entertainment</button>
+      <button class="filter-options">marvel</button>
+      <button class="filter-options">javascript</button>
+      <button class="filter-options">artificial intelligence</button>
+      <button class="filter-options">machine learning</button>
+      <button class="filter-options">trending</button>
+  </div>
+
+    <div class="link">
+      <a href="videoDetails.html">
+      <div id="videos-container">Loading...</div>
+      </a>
+    </div>
+
+    <script src="scripts/index.js"></script>
+  </body>
+</html>

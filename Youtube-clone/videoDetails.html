@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube</title>
+    <link href="styles/index.css" rel="stylesheet" type="text/css" />
+    <link href="styles/nav.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <nav>
+      <div class="left">
+        <div class="icon">
+          <img src="./Assets/hamburger.png" />
+        </div>
+
+        <div class="logo">
+          <img src="Assets/logo.png" />
+        </div>
+      </div>
+
+      <div class="middle">
+        <div class="input">
+          <input type="search" placeholder="Search" />
+          <button type="button">
+            <img src="./Assets/SearchBox-Button.png" />
+          </button>
+        </div>
+        <div class="icon">
+          <img src="./Assets/micIcon.png" />
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="icon">
+          <img src="./Assets/Create.png">
+        </div>
+        <div class="icon">
+          <img src="./Assets/apps.png">
+        </div>
+        <div class="icon">
+          <img src="./Assets/Notifications.png">
+        </div>
+        <div class="icon">
+          <img src="./Assets/Profile.png">
+        </div>
+      </div>
+    </nav>
+    <div class="whole">
+          <div class="left-side">
+          <iframe
+            id="yt-video"
+            width="850"
+            height="400"
+            src=""
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+
+          <div id="videoInfo"></div>
+
+          <div class="comnts">
+            <p style="color:white; font-size:20px;">Comments</p>
+            <p style="color:white;"><img src="./Assets/Dropdown.png">SORT BY</p>
+          </div>
+          <div class="add">
+            <p><img src="./Assets/Profile.png"></p>
+            <p style="color: #ada6a6;
+            border-bottom: 0.9px solid gray;
+            padding: 12px 0px;
+            width: 100%;">Add Comment</p>
+          </div>
+          <div id="comments">Loading....</div>
+        </div>
+
+        
+        <div id="Suggestions">
+        </div>
+    </div>   
+
+    <script src="./scripts/showVideo.js"></script>
+    <script src="Recm.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+  </body>
+</html>

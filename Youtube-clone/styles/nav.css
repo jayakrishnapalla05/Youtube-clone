@@ -1,0 +1,44 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #212121;
+  position: fixed;
+  top:0;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.middle {
+  display: flex;
+  gap: 5px;
+}
+
+.middle .input {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
+.middle .input input {
+  border: none;
+    width: 400px;
+    font-size: 1rem;
+    background-color: black;
+    padding: 10px;
+    color:white;
+}
+
+.middle .input button {
+  border: none;
+  background-color: #303030;
+}
+.right{
+  display: flex;
+  align-items: center;
+}
